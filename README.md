@@ -19,7 +19,7 @@ var config = {
 ```
 2. Start the server
 
-It's as easy as that
+
 
 ## Config
 | setting         | description                                                             |
