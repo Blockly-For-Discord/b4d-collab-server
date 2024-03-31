@@ -3,7 +3,7 @@ While multiple people can work on a project at the same time, you won't see thei
 
 
 ## Installation
-Download the Software from our releases, and unzip the files onto your NodeJS Server. In your Index.js file write this:
+1. Download the Software from our releases, and unzip the files onto your NodeJS Server. In your Index.js file write this:
 ```js
 const b4d = require('./software.js');
 
@@ -17,3 +17,14 @@ var config = {
   "blacklist": ["@hitbyathunder", "210.24.90.135"] 
 }
 ```
+2. Start the server
+
+It's as easy as that
+
+## Config
+| setting         | description                                                             |
+|----------------|---------------------------------------------------------------------------------------------------------|
+| `port`         | The port to listen to                                                                                   |
+| `password`     | (optional) You can add a password so only people with the password can enter                            |
+| `allowedUsers` | An array of people that are allowed to start live collaborations on your server. Leave empty for anyone |
+| `blacklist`    | People that are blacklisted from starting a collaboration or joining one                                |
