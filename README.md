@@ -13,8 +13,8 @@ b4d.server(config);
 var config = {
   "port": 8080,
   "password": "",
-  "allowedUsers": ["@inventionpro"],
-  "blacklist": ["@hitbyathunder", "210.24.90.135"] 
+  "allowedUsers": ["@user1"],
+  "blacklist": ["@user2", "127.0.0.1"] 
 }
 ```
 2. Start the server
@@ -27,4 +27,4 @@ It's as easy as that
 | `port`         | The port to listen to                                                                                   |
 | `password`     | (optional) You can add a password so only people with the password can enter                            |
 | `allowedUsers` | An array of people that are allowed to start live collaborations on your server. Leave empty for anyone |
-| `blacklist`    | People that are blacklisted from starting a collaboration or joining one                                |
+| `blacklist`    | People that are blacklisted from starting a collaboration or joining one  (can be an ip)                |
